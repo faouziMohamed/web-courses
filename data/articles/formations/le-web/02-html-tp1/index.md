@@ -1,0 +1,21 @@
+---
+title: 'TP1 - Pratiquez! '
+pageTitle: 'Premier pratique sur le HTML5'
+pageSubtitle: 'Testez vos connaissance sur le HTML'
+authors: 'Faouzi Mohamed'
+articleType: 'Formation'
+keywords: 'Git, GitHub, student, etudiant'
+description: "Une formation d'introduction sur les deux outils développement Git et GitHub qui ont de l'empleur ces derniers années dans le monde du développement informatique."
+date: '2021-08-13'
+time: '16h30'
+lastUpdate: '2021-08-13'
+prev: '/01-le-html5'
+path: '/02-html-tp1'
+next: '/#'
+ogImg: '/images/formations/html5-tp1.png'
+logo: '/images/formations/html5-tp1.png'
+logoAltTxt: 'Illustration du logo de HTML5'
+formationDate: '2021-08-13'
+where: 'Kénitra à domicile'
+doctypes: ''
+---

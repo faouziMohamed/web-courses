@@ -1,0 +1,21 @@
+---
+title: 'Le HTML5'
+pageTitle: 'HTML5 - Notions de base'
+pageSubtitle: 'Découvrez les bases du HTML5'
+authors: 'Faouzi Mohamed'
+articleType: 'Formation'
+keywords: 'HTML, Web, outils, vscode'
+description: "Une présentation générale de ce qu'est le HTML dans sa 5ème version. Nous verrons comment l'utiliser pour créer des site web."
+date: '2021-08-11'
+time: '11h30'
+lastUpdate: '2021-08-11'
+prev: '/00-intro-sur-le-web'
+path: '/01-le-html5'
+next: '/02-html-tp1'
+ogImg: '/images/formations/html5.png'
+logo: '/images/formations/html5.png'
+logoAltTxt: 'HTML - editeur contenant une balise paire html'
+formationDate: '2021-08-11'
+where: 'Kénitra à domicile'
+doctypes: ''
+---

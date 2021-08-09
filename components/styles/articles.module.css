@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "Corben";
+  src: url("./fonts/Corben-08lo.ttf");
+}
+
+@font-face {
+  font-family: "Agency";
+  src: url("./fonts/Agency.TTF");
+}
+
+.theme-light:root {
+  --article_wraper-background-color: rgba(221, 250, 239, 0.281);
+}
+.theme-dark:root {
+  --article_wraper-background-color: rgba(221, 250, 239, 0.281);
+}
+
+.article_wraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 490px);
+  gap: 10px;
+  width: 90%;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--article_wraper-background-color);
+  background-color: rgb(103, 161, 165);
+}
+
+.download_article {
+  align-items: center;
+  flex: 0 0;
+  margin-right: 1%;
+  align-self: flex-start;
+}
+
+.download_section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 390px;
+  min-width: 390px;
+  min-height: 450px;
+  padding: 15px 10px;
+  border: 2px solid rgba(110, 192, 177, 0.808);
+  border-radius: 3px;
+  box-shadow: 0 0 12px rgb(184, 193, 232);
+  background-color: var(--main-section-bg);
+  letter-spacing: 0.05em;
+  transition: background-color ease-in-out 0.19s;
+}
+
+.download_section:hover {
+  border: 2px solid rgba(239, 250, 139, 0.808);
+  box-shadow: 0 0 8px rgb(235, 196, 26);
+}
+
+.articleName {
+  margin: 0;
+  padding: 5px 8px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(218, 7, 28);
+}
+
+.articleName:hover {
+  text-decoration: underline;
+}
+
+.download_section:hover .articleName {
+  background-color: rgb(180, 14, 2);
+}
+
+.download_link_container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(237, 255, 252, 0.644);
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(125, 246, 250),
+    rgba(137, 202, 172, 0.918),
+    rgb(193, 195, 211)
+  );
+}
+
+.download_section:hover .download_link_container {
+  background-color: rgb(215, 250, 224);
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(155, 255, 189),
+    rgb(96, 207, 183),
+    rgb(180, 252, 246)
+  );
+}
+
+.formation_title {
+  width: 100%;
+}
+
+.cardFigure {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  flex: 1 1;
+  min-height: 200px;
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(9, 226, 233, 0.192);
+  font-family: Agency;
+  color: #001;
+  background-color: rgb(0, 255, 200);
+  background-image: linear-gradient(
+    rgb(161, 255, 242),
+    rgb(221, 255, 251),
+    rgb(223, 255, 208)
+  );
+}
+
+.download_section:hover .cardFigure {
+  background-color: rgb(45, 246, 253);
+  background-image: linear-gradient(
+    rgb(189, 253, 255),
+    rgb(81, 255, 174),
+    rgb(190, 255, 195)
+  );
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Agency;
+  font-size: 110%;
+  width: 100%;
+}
+
+.logo_img {
+  width: 130px;
+}
+
+.logo_img_bigger {
+  width: 150px;
+}
+
+.titleMargin {
+  margin: 2px;
+}
+
+.author {
+  margin: 2px;
+  font-family: serif;
+  font-size: 75%;
+  color: #312d2d;
+}
+
+.smallInfoStyle {
+  margin: 0;
+  padding: 0;
+  font-size: 80%;
+  font-weight: normal;
+  color: #312d2d;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+  color: #c4ffd3;
+  padding-left: 11px;
+}
+
+.download_link {
+  display: block;
+  margin: 0;
+}
+.link_to_article {
+  display: inline-flex;
+  flex: 1;
+  position: relative;
+  text-align: center;
+  text-decoration: underline 1px rgb(187, 207, 206);
+  color: rgb(23, 24, 24);
+}
+
+:is(.link, .link_to_article):hover {
+  text-decoration: underline 2px;
+}
+
+.download_section:hover .link_to_article {
+  color: rgb(2, 17, 17);
+}
+
+:is(.link)::before {
+  display: inline-flex;
+  justify-content: center;
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  font-size: 75%;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f0c1";
+  text-decoration: 0;
+  opacity: 0.8;
+  color: rgb(32, 28, 28);
+  transition: all ease-in-out 0.2s;
+}
+
+.link::before {
+  left: -5px;
+  top: 2px;
+  color: rgb(255, 0, 98);
+}
+
+:is(.link_to_article):hover::before {
+  opacity: 1;
+}
+
+.download_section:hover :is(.link_to_article):hover::before {
+  color: rgb(2, 17, 17);
+}
+
+.articleName:hover .link::before {
+  color: rgb(203, 252, 255);
+  opacity: 1;
+}
+
+.links_label_container {
+  display: flex;
+  width: 100%;
+}
+
+.links_label_1st_innerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  padding: 2px 0px;
+  align-self: flex-end;
+}
+
+.links_label_2nd_innerWrapper {
+  justify-content: flex-end;
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: flex-end;
+}
+
+.read_dw_label {
+  display: block;
+  align-self: center;
+  margin-bottom: -1px;
+  width: 100%;
+  border-radius: 100% 0% 100% 0%;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 1em;
+  color: rgb(1, 0, 34);
+  background-image: linear-gradient(
+    transparent,
+    rgba(111, 238, 255, 0.89),
+    rgba(241, 114, 192, 0.316),
+    rgba(15, 247, 208, 0.747)
+  );
+}
+
+.link_container {
+  display: flex;
+}
+.btn_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px 10px;
+  color: black;
+  border: 1px solid rgb(177, 170, 170);
+  text-decoration: none;
+  background-color: rgb(255, 250, 187);
+  background-image: linear-gradient(
+    rgb(80, 168, 154),
+    rgb(0, 217, 255),
+    rgba(76, 141, 146, 0.912)
+  );
+}
+.btn_text {
+  margin-left: 5px;
+}
+:is(.btn_links):first-of-type {
+  margin-right: 2px;
+}
+
+:is(.btn_links):last-of-type {
+  margin-left: 2px;
+}
+
+:is(.btn_links):hover {
+  background-color: rgb(253, 183, 30);
+  background-image: linear-gradient(
+    rgb(80, 168, 154),
+    rgb(0, 153, 255),
+    rgba(76, 141, 146, 0.912)
+  );
+}
+
+:is(.btn_links):active {
+  background-color: rgb(255, 147, 31);
+  background-image: linear-gradient(
+    rgb(255, 255, 15),
+    rgba(255, 123, 22, 0.878),
+    orange
+  );
+}
+
+:is(.btn_links):hover .btn_text {
+  text-decoration: underline;
+}
