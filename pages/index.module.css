@@ -4,12 +4,14 @@
 }
 .homepage {
   align-items: start;
+
   /* height: auto; */
   overflow-y: auto;
 }
 .home_content_wrapper {
   position: relative;
   flex-basis: 100%;
+
   /* height: 100%; */
   width: 100%;
   padding: 0;
@@ -29,7 +31,7 @@
   display: flex;
   position: relative;
   background-color: rgb(1, 7, 63);
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 1rem;
   width: 100%;
   color: white;
 }
@@ -123,7 +125,7 @@
 .home_top_link_item {
   display: flex;
   text-align: center;
-  padding: 0px;
+  padding: 0;
 }
 
 .home_top_link {
@@ -131,13 +133,14 @@
   text-decoration: none;
   background-color: rgb(135, 2, 64);
   color: white;
-  box-shadow: 2px 0px 12px rgba(255, 255, 255, 0.076);
+  box-shadow: 2px 0 12px rgba(255, 255, 255, 0.076);
 }
 
 .home_top_link_item:not(:last-child) {
   border-right: 5px solid transparent;
 }
-.home_top_link:hover {
+.home_top_link:hover,
+.home_top_link:focus {
   background-color: rgb(90, 2, 43);
 }
 
@@ -149,7 +152,7 @@
 
 .covid_alerte_section {
   margin: 0;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   background-color: rgb(99, 0, 30);
   color: rgb(254, 217, 217);
 }
@@ -202,7 +205,7 @@
   align-items: center;
   align-self: flex-end;
   padding: 10px;
-  margin: 9px 0 0 0;
+  margin: 9px 0 0;
   font-size: 90%;
   text-decoration: none;
   background-color: rgb(71, 0, 28);
@@ -227,7 +230,8 @@
   margin-right: 9px;
 }
 
-.covid_more_info_btn:hover {
+.covid_more_info_btn:hover,
+.covid_more_info_btn:focus {
   background-color: rgb(41, 0, 16);
   background-image: linear-gradient(
       to bottom,
@@ -245,13 +249,15 @@
   transform: scale(103%);
 }
 
-.covid_more_info_btn:hover .covid_more_info_btn_text {
+.covid_more_info_btn:hover .covid_more_info_btn_text,
+.covid_more_info_btn:focus .covid_more_info_btn_text {
   text-decoration: underline;
 }
 
 @media screen and (max-width: 887px) {
   .landpage_row_1 {
     width: 100%;
+
     /* padding: 10px; */
     height: auto;
     color: white;

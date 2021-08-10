@@ -1,4 +1,5 @@
 /* eslint-disable class-methods-use-this */
+
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -11,7 +12,7 @@ class MyDocument extends Document {
     return (
       <Html className="theme-light" lang="fr">
         <Head />
-        <body>
+        <body className="line-numbers">
           <Main />
           <NextScript />
         </body>

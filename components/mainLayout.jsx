@@ -16,11 +16,11 @@ export default function Layout({ article, children, metadata, navigation }) {
         <HeadData metadata={metadata} />
         <Header />
         <LeftBurgerButton isArticle={isArticle} />
-        <main className="app-content main-content flex">
+        <main className="app-content main-content ">
           <TableOfContent isArticle={isArticle} />
           <div className="content-wrapper">
             <span id="top"></span>
-            <article className="main-article flex">
+            <article className="main-article">
               <PageHeader titles={metadata} />
               <PageContent>{children}</PageContent>
               <BottomNavigation navigation={navigation} isArticle={isArticle} />

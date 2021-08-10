@@ -69,6 +69,50 @@ body {
   min-width: 280px;
 }
 
+.remark-highlight {
+  overflow: auto;
+  font-size: 0.9rem;
+  width: 100%;
+  align-self: center;
+}
+pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+  color: white;
+}
+
+pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-reset: linenumber;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
 .root {
   position: fixed;
   top: 0;
@@ -384,9 +428,13 @@ body {
 }
 
 .main-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 10px;
   letter-spacing: 0.05em;
   line-height: 1.39em;
+  overflow: auto;
   transition: background-color ease-in-out 0.19s;
 }
 

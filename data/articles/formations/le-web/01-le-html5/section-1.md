@@ -32,16 +32,3 @@ On a généralement deux choses lorsqu'on parle de sitte web:
 On a alors le **HTML** qui prend en charge la création du contenu des pages Web. Et le **CSS** qui va s'encharger de l'apparence.
 
 Écrire les deux langues séparément signifie qu'il est beaucoup plus facile de **se concentrer uniquement sur le contenu ou l'apparence** sans se soucier des deux en même temps. Par exemple, supposons qu'un site web revoie entièrement les couleurs et le design de sa marque. Cela nécessiterait seulement d'adapter le CSS, c'est-à-dire l'apparence du site. Le contenu pourrait être laissé seul, inchangé.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Test</title>
-  </head>
-  <body>
-    <p>Hello world!</p>
-  </body>
-</html>
-```

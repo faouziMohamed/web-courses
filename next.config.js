@@ -1,6 +1,7 @@
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
 module.exports = {
+  webPack5: true,
   async redirects() {
     return [
       {

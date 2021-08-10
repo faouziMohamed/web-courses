@@ -25,6 +25,17 @@ export default function HeadData({ metadata }) {
         {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="./styles/noscript.css" />
       </noscript>
+
+      <link
+        rel="preload"
+        href="https://unpkg.com/prismjs@1.24.1/themes/prism-okaidia.css"
+        as="style"
+      />
+
+      <link
+        href={`https://unpkg.com/prismjs@1.24.1/themes/prism-okaidia.css`}
+        rel="stylesheet"
+      />
     </Head>
   );
 }
